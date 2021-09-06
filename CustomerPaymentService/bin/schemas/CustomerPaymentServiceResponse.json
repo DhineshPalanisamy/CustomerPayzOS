@@ -16,14 +16,6 @@
               "maximum" : 999999999,
               "type" : "integer"
             },
-            "SYS_DATE" : {
-              "maxLength" : 10,
-              "type" : "string"
-            },
-            "SYS_TIME" : {
-              "maxLength" : 8,
-              "type" : "string"
-            },
             "TRANSACTION_ID" : {
               "maxLength" : 16,
               "type" : "string"

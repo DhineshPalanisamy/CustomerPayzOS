@@ -27,13 +27,13 @@
                         </marshaller>
                         <applicationDatatype datatype="DECIMAL" precision="9" scale="0"/>
                     </field>
-                    <field name="SYS_DATE" originalName="SYS_DATE" included="Y" path="CSPYRES.CSPYRES.SYS_DATE">
+                    <field name="SYS_DATE" originalName="SYS_DATE" included="N" path="CSPYRES.CSPYRES.SYS_DATE">
                         <startPos>60</startPos>
                         <bytes>10</bytes>
                         <maxBytes>10</maxBytes>
                         <applicationDatatype datatype="CHAR"/>
                     </field>
-                    <field name="SYS_TIME" originalName="SYS_TIME" included="Y" path="CSPYRES.CSPYRES.SYS_TIME">
+                    <field name="SYS_TIME" originalName="SYS_TIME" included="N" path="CSPYRES.CSPYRES.SYS_TIME">
                         <startPos>70</startPos>
                         <bytes>8</bytes>
                         <maxBytes>8</maxBytes>

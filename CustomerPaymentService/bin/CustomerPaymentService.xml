@@ -32,8 +32,8 @@
                         <field included="Y" fieldName="CSPYRES">
                             <field included="Y" fieldName="CUSTOMER_NAME"/>
                             <field included="Y" fieldName="CUSTOMER_ID"/>
-                            <field included="Y" fieldName="SYS_DATE"/>
-                            <field included="Y" fieldName="SYS_TIME"/>
+                            <field included="N" fieldName="SYS_DATE"/>
+                            <field included="N" fieldName="SYS_TIME"/>
                             <field included="Y" fieldName="TRANSACTION_ID"/>
                             <field included="Y" fieldName="DEBIT_AMOUNT_RES"/>
                             <field included="Y" fieldName="AVAILABLE_BALANCE"/>
