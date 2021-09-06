@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="PaymentResSchema" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="PaymentResSchema">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="CSPYRES" originalName="CSPYRES" included="Y" path="CSPYRES">
+                <startPos>1</startPos>
+                <bytes>241</bytes>
+                <maxBytes>241</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="CSPYRES" originalName="CSPYRES" included="Y" path="CSPYRES.CSPYRES">
+                    <startPos>1</startPos>
+                    <bytes>241</bytes>
+                    <maxBytes>241</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="CUSTOMER_NAME" originalName="CUSTOMER_NAME" included="Y" path="CSPYRES.CSPYRES.CUSTOMER_NAME">
+                        <startPos>1</startPos>
+                        <bytes>50</bytes>
+                        <maxBytes>50</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CUSTOMER_ID" originalName="CUSTOMER_ID" included="Y" path="CSPYRES.CSPYRES.CUSTOMER_ID">
+                        <startPos>51</startPos>
+                        <bytes>9</bytes>
+                        <maxBytes>9</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="9" scale="0"/>
+                    </field>
+                    <field name="SYS_DATE" originalName="SYS_DATE" included="Y" path="CSPYRES.CSPYRES.SYS_DATE">
+                        <startPos>60</startPos>
+                        <bytes>10</bytes>
+                        <maxBytes>10</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="SYS_TIME" originalName="SYS_TIME" included="Y" path="CSPYRES.CSPYRES.SYS_TIME">
+                        <startPos>70</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="TRANSACTION_ID" originalName="TRANSACTION_ID" included="Y" path="CSPYRES.CSPYRES.TRANSACTION_ID">
+                        <startPos>78</startPos>
+                        <bytes>16</bytes>
+                        <maxBytes>16</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DEBIT_AMOUNT_RES" originalName="DEBIT_AMOUNT_RES" included="Y" path="CSPYRES.CSPYRES.DEBIT_AMOUNT_RES">
+                        <startPos>94</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="12" scale="2"/>
+                    </field>
+                    <field name="AVAILABLE_BALANCE" originalName="AVAILABLE_BALANCE" included="Y" path="CSPYRES.CSPYRES.AVAILABLE_BALANCE">
+                        <startPos>106</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="12" scale="2"/>
+                    </field>
+                    <field name="HOLD_BALANCE" originalName="HOLD_BALANCE" included="Y" path="CSPYRES.CSPYRES.HOLD_BALANCE">
+                        <startPos>118</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="12" scale="2"/>
+                    </field>
+                    <field name="LEDGER_BL" originalName="LEDGER_BL" included="Y" path="CSPYRES.CSPYRES.LEDGER_BL">
+                        <startPos>130</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="12" scale="2"/>
+                    </field>
+                    <field name="MESSAGES" originalName="MESSAGES" included="Y" path="CSPYRES.CSPYRES.MESSAGES">
+                        <startPos>142</startPos>
+                        <bytes>100</bytes>
+                        <maxBytes>100</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>

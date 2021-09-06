@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="PayemntReqSchema" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="PayemntReqSchema">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="CSPYREQ" originalName="CSPYREQ" included="Y" path="CSPYREQ">
+                <startPos>1</startPos>
+                <bytes>30</bytes>
+                <maxBytes>30</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="CSPYREQ" originalName="CSPYREQ" included="Y" path="CSPYREQ.CSPYREQ">
+                    <startPos>1</startPos>
+                    <bytes>30</bytes>
+                    <maxBytes>30</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="DEBIT_AMOUNT" originalName="DEBIT_AMOUNT" included="Y" path="CSPYREQ.CSPYREQ.DEBIT_AMOUNT">
+                        <startPos>1</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="12" scale="2"/>
+                    </field>
+                    <field name="ACCOUNT_NO" originalName="ACCOUNT_NO" included="Y" path="CSPYREQ.CSPYREQ.ACCOUNT_NO">
+                        <startPos>13</startPos>
+                        <bytes>18</bytes>
+                        <maxBytes>18</maxBytes>
+                        <marshaller isSigned="Y" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="18" scale="0"/>
+                    </field>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>
